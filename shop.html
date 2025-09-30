@@ -1,0 +1,39 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+<style>
+    container{
+          display:inline-block;
+          gap: 10rem;
+          padding:10px;
+          justify-content: space-around;
+
+    }
+
+
+    .card {
+        display:inline-block;
+        border: 2px solid #ccc;
+        padding: 10px;
+        box-shadow: 2px 2px 5px 10px rgba(0,0,0,0.1);
+</style>
+<div class="container">
+{% for i in products%}
+
+<div class="card" style="width:18rem;">
+  <img src="{{i.img.url}}" class="card-img-top">
+  <div class="card-body">
+    <h5 class="card-title">{{i.name}}</h5>
+    <p class="card-text">{{i.desc}}</p>
+     <h2>stock: {{i.stock}}</h2><h2>available: {{i.available}}</h2><h3>price: {{i.price}}</h3>
+    <a href="contact_us" class="btn btn-primary">contact us</a>
+  </div>
+
+</div>
+{% endfor %}
+    </div>
+
+<br>
+<br>
+
+{% endblock %}

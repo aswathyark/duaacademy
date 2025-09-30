@@ -1,0 +1,46 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+<style>
+    container{
+          display:flex;
+          flex-wrap:wrap;
+          gap: 1rem;
+          justify-content: space-around;
+
+    }
+
+
+    .card {
+        display:inline-block;
+        flex: 1 1 250px; /* Allows cards to grow/shrink and sets a base width */
+        border: 2px solid #ccc;
+        padding: 10px;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+</style>
+<br>
+<div class="container" >
+      <div class="card" style="width: 18rem;">
+        <img src="{% static 'assets\admin\img\A.jpg' %}" class="card-img-top" alt="...">
+      </div>
+     <div class="card" style="width: 18rem;">
+         <img src="{% static 'assets\admin\img\PYTHON.jpg' %}" class="card-img-top" alt="...">
+     </div>
+    <div class="card" style="width: 18rem;">
+        <img src="{% static 'assets\admin\img\c.png' %}" class="card-img-top" alt="...">
+     </div>
+    <div class="card" style="width: 18rem;">
+        <img src="{% static 'assets\admin\img\ma.jpg' %}" class="card-img-top" alt="...">
+     </div>
+    <div class="card" style="width: 18rem;">
+        <img src="{% static 'assets\admin\img\b.jpg' %}" class="card-img-top" alt="...">
+     </div>
+
+</div>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="courses" class="btn btn-primary">more.....</a>
+
+<br>
+<br>
+<br>
+
+{% endblock %}

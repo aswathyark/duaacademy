@@ -1,0 +1,147 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <title>DUA</title>
+  <style>
+    body {
+            font-family:Arial, sans-serif;
+            margin: 2px;
+            background-color:white;
+        }
+        navbar navbar-expand-lg{
+          position:fixed;
+          width:100%;
+        }
+        .footer {
+            position: fixed;
+            padding: 10px 10px 0px 10px;
+            bottom: 2px;
+            width: 100%;
+            text-align:center;
+            height: 30px;
+            font-size:10px;
+            background: white;
+        }
+    p{
+        margin:20px 5px 5px 10px;
+        text-align:justify;
+        font-size:16px;
+    }
+    h2{
+       font-size:20px;
+       font-family:calibri;
+       color:blue;
+    }
+    h3{
+       font-size:18px;
+       font-family:calibri;
+       color:green;
+    }
+    </style>
+</head>
+<nav class="navbar navbar-expand-lg  navbar-dark bg-primary">
+
+  <!-- Navbar content -->
+      <a class="navbar-brand" href="#">&nbsp;
+        <img src="{% static 'assets\admin\img\dualogo.jpg' %}"style="width:50px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+       <ul class="navbar-nav">
+        <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="about_us">About us</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="blog">Blog</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="shop">Shop</a>
+         </li>
+        <li class="nav-item">
+        <a class="nav-link" href="booking">Admission</a>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+          Courses
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="prog">PYTHON & DJANGO</a>
+          <a class="dropdown-item" href="accounting">ACCOUNTING</a>
+          <a class="dropdown-item" href="cttc">CTTC</a>
+          <a class="dropdown-item" href="cctv">CCTV INSTALLATION</a>
+          <a class="dropdown-item" href="netfix">NET & FIX</a>
+          <a class="dropdown-item" href="data_entry">DATA ENTRY OPERATOR</a>
+          <a class="dropdown-item" href="dca">DCA</a>
+           <a class="dropdown-item" href="pddtp">PDDTP</a>
+          <a class="dropdown-item" href="graphic">GRAPHIC DESIGNING</a>
+          <a class="dropdown-item" href="office">OFFICE PRO ACCOUNTS</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</nav>
+{% block content%}
+
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'assets\admin\img\duad.jpg' %}" class="d-block w-100" style="height:900px;width:500px;">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'assets\admin\img\dua_cctv.jpg' %}" class="d-block w-100" style="height:900px;width:500px;">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'assets\admin\img\keltron-internship.jpg' %}" class="d-block w-100" style="height:900px;width:500px;">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'assets\admin\img\keltron-intern.jpg' %}" class="d-block w-100" style="height:900px;width:500px;">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+&nbsp;
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DUA has designed a comprehensive and in-depth training programs, keeping in mind the changing trends and demands of the industry. As such, those who want to become a part of this competitive market, they do have a likely chance of excelling and making it big. The training programs are structured to suit the demanding environment. Boasting of a highly qualified team of faculty, the institute ensures the best in terms of courses and practical training. Our common objective is to nurture professionals, who can stand up to the challenges and are passionate. Innovation is the key to survival and DUA strives to provide a platform, where individuals get an opportunity to improve their skills.<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DUATECH consists of experienced Networking Engineers, Certified Trainers, Project Leaders, System Analyst, Developers, and enthusiastic Customer Support Engineers. Our Customers have learnt few things from our enthusiastic "DUATECH", extraordinary quality,outstanding value, and great training.All of our trainers are Microsoft Certified IT professionals who bring real world experience into the classroom. Hired for their presentation skills as well as their expertise, they are then put through one of the most rigorous development programs in the industry,backed by constant ongoing evaluation. DUATECH Provide Best software solutions for our clients.We delivers highly transformational business solutions to help its clients stay ahead of competition today and in the future .The application development services provided by Duatechthe entire project lifecycle, starting from requirements analysis through design, development, testing, integration, delivery and implementation to after-sales support .<a href="about_us">&nbsp;&nbsp;more</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+<br>
+  <h2>DUA TECHNICAL ACADEMY INAGURATION CEREMONY</h2><br><img src="{% static 'assets\admin\img\DUA TECHNICAL ACADEMY INAUGURATION.JPG' %}"style="width:100%">
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our goal is to serve and educate the whole nation,informing the public regarding the importance of home and business security.
+ We offers a full line of hardware and software from all the major vendors. Whether you need an entire computer or computer spare parts we are the smart choice. When you select us, we ensure that the software
+ selected by you correspond with the built-to-order hardware system that runs your software efficiently.</p>
+<p>Programming is a highly demanded and beneficial career in this digital world. As technology practices are mushrooming into the various sectors of the industry, students who are finishing their 12th grade are also gravitating towards programming classes in order to gear up to meet the ever-changing future. Among the possible programming directions after the 12th class, there can be software development, data science, mobile application development, video game design, etc.First, there are a lot of employability opportunities in many fields like IT, finance, healthcare, education, and entertainment that require programming skills. Coding also trains your critical and analytical thinking skills that can be applied in every industry.Second, the field of programming has good career opportunities with the compensation being high salaries, flexibility in working hours and the ability to work remotely. You can work in foreign outfits or at home as a freelancer since it is one of the few skills that enable you to work internationally.Finally, the fact that businesses are becoming digitalised after the pandemic has only intensified the demand for skilled developers. Students who learn programming early gain an advantage towards adapting to this dynamic world.The web developers are professional Web designers. Their speciality can be front-end, back-end or full-stack development.<a href="courses">&nbsp;&nbsp;more</a></p><br><h3>Online vs offline courses: what to choose?</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Students now have a larger variety of options than ever due to the emergence of online learning. The online courses provide flexibility, low costs, and international visibility. They suit self-motivated persons in learning.On the other side, offline courses offer orderly education, peer process, and physical lab access. They suit people who want to learn in a practical and face-to-face manner.The hybrid approach is also common among the students: they complete a formal degree and complement it with certifications via the web.<a href="booking">&nbsp;&nbsp;more</a></p>
+<br>
+<h3>Musical Academy</h3>
+<div class="card" style="width: 18rem;">
+        <img src="{% static 'assets\admin\img\ma.jpg' %}" class="card-img-top" alt="...">
+     </div>
+<p>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The core principle of this new school was to have great teachers who were also outstanding performers - abolishing the idea that ‘those who can do, those who can't teach’. Our belief is that those who can, teach better, and their pupils have better results as a consequence.   Being a teacher is about more than sitting in a chair and supervising a pupil playing scales. It is about being able to pass on the magic of music to our students.                                                                                                                                            </p>
+<br>
+
+{% endblock %}
+
+
+
+
+
+<div class="footer">© Dua, All rights reserved.    |     Site Designed By : <a href="/">Duateam</a></div>
+
+</html>
